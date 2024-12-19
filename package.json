@@ -1,0 +1,22 @@
+{
+  "name": "email_recived",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "@langchain/community": "^0.2.31",
+    "@langchain/core": "^0.2.31",
+    "@langchain/langgraph": "0.2.0",
+    "@langchain/openai": "^0.2.8",
+    "uuid": "^10.0.0"
+  }
+}
