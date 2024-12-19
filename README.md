@@ -1,4 +1,8 @@
-# email_recived
+###Api reveniu suscriptors
+
+Manejo de ventos de suscripciones y envio de datos del cliente al flujo de make de 'Onboarding bienvenida reveniu'
+
+Stevie AI - Automatizaciones
 
 To install dependencies:
 
