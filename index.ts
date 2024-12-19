@@ -1,14 +1,12 @@
 import express, { type Request, type Response } from "express";
 import cors from "cors";
 import * as uuid from "uuid";
-import { access_token } from "./sendMessage";
+
 import { workflow } from "./graph";
 import { HumanMessage } from "@langchain/core/messages";
 import { sendMessage } from "./sendMessage";
 
-const token_De_acceso_aviva_santiago =
-  "IGAAIDG9qV1g1BZAE1JSUc1UktwN1pKRGVoQ2REUURXSVkxSTh2elZA1UkxtcTY2TEZApVFpweDhXZATJDZA3p2aW5wd2xvbkZA3UHlDX0NKN3pVNXdseXZA5YVRLOENwTnBhVTBKby1LNGlLaTZAuM3dLa2lBV1dHSWNSbEJ5aTFfampFVQZDZD";
-
+const VERIFY_TOKEN = process.env.VERIFY_TOKEN;
 const app = express();
 app.use(express.json());
 app.use(cors());
@@ -43,7 +41,7 @@ app.get("/webhook", (req, res) => {
   const challenge = req.query["hub.challenge"];
 
   if (mode && token) {
-    if (mode === "subscribe" && token === "566368119674381") {
+    if (mode === "subscribe" && token === VERIFY_TOKEN) {
       // Asegúrate de usar el mismo token aquí
       console.log("Webhook verified");
       res.status(200).send(challenge); // Envía el challenge de vuelta
@@ -73,12 +71,10 @@ app.post("/webhook", async (req, res): Promise<any> => {
     const senderId = req.body.entry[0].messaging[0].sender.id;
     const recipientId = req.body.entry[0].messaging[0].recipient.id;
     const message = req.body.entry[0].messaging[0].message.text;
-    console.log("mensaje de usuario: " + req.body.entry[0]);
 
     const thread_id = senderId;
 
     if (!message) return res.sendStatus(200);
-    console.log("sender: " + message);
 
     // Enviar al agente
 
@@ -97,10 +93,6 @@ app.post("/webhook", async (req, res): Promise<any> => {
       if (recentMsg._getType() === "ai") {
         if (recentMsg === null) return;
         if (recentMsg.content !== null && recentMsg.content !== "") {
-          console.log("agent: " + recentMsg.content);
-          console.log("-------------");
-          console.log(senderId);
-          console.log(recipientId);
           try {
             sendMessage({ senderId, recipientId, message: recentMsg.content });
           } catch (e) {

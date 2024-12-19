@@ -44,6 +44,8 @@ export const sendMessage = async ({
     return { error: "Parámetros inválidos." };
   }
 
+  // Access token prod cuenta aviva INSTAGRAM_ACCESS_TOKEN
+  // Access token dev cuenta aviva INSTAGRAM_ACCESS_TOKEN_AVIVA_CUENTA_MARIANO
   const accessToken = process.env.INSTAGRAM_ACCESS_TOKEN_AVIVA_CUENTA_MARIANO; // Usa variables de entorno
 
   const url = `https://graph.instagram.com/v21.0/${recipientId}/messages`;
