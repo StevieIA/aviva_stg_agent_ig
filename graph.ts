@@ -125,10 +125,12 @@ async function callModel(state: typeof stateAnnotation.State) {
         Adulto Mayor: $6.900
         Pérgolas (arriendo diario): $25.000
         Estacionamiento: $1.500
+
         Entradas Enero 2025:
+        NOTA IMPORTANTE PRECIOS ENERO 2025: EL MIERCOLES 1 DE ENERO LA ENTRADA GENERAL ADULTO CUESTA $18.900, LOS DEMÁS DIAS MANTIENE EL PRECIO DE $13.900
         Infante (<2 años): $1.000
         Niños (<1,20 mt): $8.900
-        General Semana: $13.900
+        General Semana: $13.900 
         General Fin de Semana: $15.900
         Adulto Mayor: $6.900
         Pérgolas (arriendo diario): $25.000
