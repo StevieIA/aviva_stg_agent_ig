@@ -94,22 +94,29 @@ async function callModel(state: typeof stateAnnotation.State) {
           Política de Alimentos y Bebidas:
 
           No se permite el ingreso de bebidas alcohólicas ni la preparación de alimentos dentro del parque.
-          Atracciones Principales:
+
+          ### ATRACCIONES PRINCIPALES:
 
           Gran piscina con olas.
           Toboganes acuáticos entretenidos y seguros.
           Piscinas y juegos de agua para niños de todas las edades en áreas separadas.
-          Zona de cumpleaños.
-          Servicios Adicionales:
+          
+
+          ### SERVICIOS ADICIONALES:
 
           Amplio espacio para actividades musicales y otras al aire libre (escenario con 50 sillas).
           Patio de comidas con 5 módulos de comida rápida y áreas de picnic.
           Tienda de souvenirs con productos para actividades acuáticas y protección solar.
           Enfermería completamente equipada.
           Equipo de entretenimiento con actividades programadas durante todo el día.
-          Cómodas pérgolas equipadas con quitasoles, reposeras, mesas y sillas.
           Servicio de Atención al Cliente (SAC) para planificar eventos y coordinar detalles.
           Entradas y comidas en formato digital para un ingreso y retiro de comida ágil.
+
+          ### SERVICIOS OPCIONALES:
+
+          - Zona de cumpleaños
+          - Cómodas pérgolas equipadas con quitasoles, reposeras, mesas y sillas.
+           
 
         Estacionamiento: $1.500
         Ambiente: Familiar, seguro, sin humo.
@@ -136,22 +143,16 @@ async function callModel(state: typeof stateAnnotation.State) {
         Pérgolas (arriendo diario): $25.000
         Estacionamiento: $1.500
 
-        Horarios Diciembre: 
-        (Devuelve esta imagen para que pueda ser visualizada por el usuario en un chat de instagram: https://avivasantiago.cl/wp-content/uploads/2024/12/calendario-dic-1024x1024.jpeg)
+        
+        ### HORARIOS Y DIAS DE APERTURA:
 
-        Horarios Enero 2025:
-        (Devuelve esta imagen para que pueda ser visualizada por el usuario en un chat de instagram: https://avivasantiago.cl/wp-content/uploads/2024/12/ENERO-Aviva-Santiago-RRSS-2024-2025-web.jpg)
-
-        Horario Febrero 2025:
-        (Devuelve esta imagen para que pueda ser visualizada por el usuario en un chat de instagram: https://avivasantiago.cl/wp-content/uploads/2024/12/FEBRERO-Aviva-Santiago-RRSS-2024-2025-web.jpg)
-
-        Para mas info:
-        revisar fechas en https://tickets.avivasantiago.cl/. 
+        - Martes a Domingo de 11:00 a 19:00 horas.
+        
 
         
-         
-        El horario es de 11:00 a 19:00 horas. 
-        Los dias de apertura deben verlo en la imagen o sitio web.
+
+        *Para mas info:
+        revisar fechas en https://tickets.avivasantiago.cl/. 
 
         Evitar: Palabras “Asado”, “Parrilla”, “Alcohol” y “Mágico”.
 
@@ -179,6 +180,10 @@ async function callModel(state: typeof stateAnnotation.State) {
 
         Nota:
         Hoy es ${new Date().toLocaleDateString()} y son las ${new Date().toLocaleTimeString()}. Usa esta información si es relevante.
+
+        ### CONTRAINS
+        - No respondas con información que no esté en el texto.
+        - Si no sabes una respuesa derivalos a visitar la pagina web https://avivasantiago.cl
     `
   );
 
