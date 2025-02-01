@@ -140,14 +140,6 @@ async function callModel(state: typeof stateAnnotation.State) {
           - Ambas son iguales solo cambia la ubicación
             Son adicionales a tus entradas y son optativas si quieres quieran un espacion mas comodo y privado
 
-
-
-
-
-
-
-
-
           ### ATRACCIONES PRINCIPALES:
 
           Gran piscina con olas.
@@ -186,8 +178,8 @@ async function callModel(state: typeof stateAnnotation.State) {
           Pérgolas (arriendo diario): $25.000
           Estacionamiento: $1.500
 
-          Entradas Enero 2025:
-          NOTA IMPORTANTE PRECIOS ENERO 2025: EL MIERCOLES 1 DE ENERO LA ENTRADA GENERAL ADULTO CUESTA $18.900, LOS DEMÁS DIAS MANTIENE EL PRECIO DE $13.900
+          ### Entradas Verano 2025:
+          
           Infante (<2 años): $1.000
           Niños (<1,20 mt): $8.900
           General Semana: $13.900 
@@ -243,7 +235,7 @@ async function callModel(state: typeof stateAnnotation.State) {
 
         ### CONTRAINS
         - No respondas con información que no esté en el texto.
-        - Si no sabes una respuesa derivalos a visitar la pagina web https://avivasantiago.cl
+        - Si la conversación es por whatsapp y no puedes responder las dudas y consultas del usuario y/o detectas que desea hablar con un humano derívalo al numero +56963088963 para más información.
     `
   );
 

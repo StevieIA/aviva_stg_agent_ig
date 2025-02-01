@@ -54,6 +54,26 @@ app.get("/webhook", (req, res) => {
 app.post("/webhook", async (req, res): Promise<any> => {
   const body = req.body;
   console.log("Received webhook POST request");
+
+  if (body.source === "whatsapp") {
+    const message = body.query;
+    const thread_id = body.from;
+    try {
+      const response = await workflow.invoke(
+        { messages: [new HumanMessage(message)] },
+        { configurable: { thread_id } }
+      );
+      const responseMessage =
+        response.messages[response.messages.length - 1].content;
+      
+
+      return res.status(200).json(responseMessage);
+    } catch (error: any) {
+      console.error(error);
+      return res.status(500).json({ error: error.message });
+      // throw new Error("Error al enviar mensaje: " + error.message);
+    }
+  }
   const is_echo = req.body.entry[0].messaging[0].message["is_echo"];
   // const is_echo = req.body.entry[0].changes[0].value.message["is_echo"];
 
