@@ -188,6 +188,18 @@ async function callModel(state: typeof stateAnnotation.State) {
           Pérgolas (arriendo diario): $25.000
           Estacionamiento: $1.500
 
+          ### PROMOCIONES:
+
+          ### Cuando consulten por precios o promociones primero responde con ésta infomracón y luego si es necesario responde a la consulta.
+
+          "En el mes del amor queremos regalonearte con estos miércoles y viernes especiales para disfrutar en familia:
+
+          - Pack Nido 2+2: 2 generales y 2 niños de menos de 1.20 liberados. 
+          - PACK FAMILIA 4x3: Ingresan 4 y pagan 3
+
+          Solo venta en nuestra tienda online https://tickets.avivasantiago.cl/"
+
+
           
         ### HORARIOS Y DIAS DE APERTURA:
 
