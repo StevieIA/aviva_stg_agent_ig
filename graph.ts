@@ -205,6 +205,9 @@ async function callModel(state: typeof stateAnnotation.State) {
 
         - Martes a Domingo de 11:00 a 19:00 horas.
         
+        - NOVEDAD importante sobre los dias de apertura y cierre:
+        - El parque está abierto de martes a domingo hasta el 2 de marzo, dando finaliza la temporada el fin de semana del 8 y 9 de marzo.
+        
 
         
 
